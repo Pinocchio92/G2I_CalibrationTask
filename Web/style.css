@@ -1,0 +1,18 @@
+:root { color-scheme: dark; font-family: ui-monospace, SFMono-Regular, Consolas, monospace; background: #080d14; color: #dce8ef; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 24px; }
+main { width: min(960px, 100%); }
+header { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 20px; }
+.eyebrow { color: #7e939f; font-size: 11px; letter-spacing: 2px; }
+h1 { font-size: clamp(22px, 4vw, 34px); letter-spacing: 4px; margin: 8px 0 0; }
+#status { color: #4affeb; font-size: 13px; }
+.hud { display: flex; justify-content: space-between; margin-bottom: 12px; color: #7e939f; font-size: 13px; letter-spacing: 2px; }
+.hud strong { color: #f5ed40; }
+.play-area { position: relative; }
+#announcement { position: absolute; top: 48%; left: 0; width: 100%; text-align: center; color: #f5ed40; font-size: clamp(16px, 3vw, 28px); font-weight: bold; pointer-events: none; text-shadow: 2px 2px #000; }
+canvas { display: block; width: 100%; height: auto; background: #000; border: 1px solid #263743; image-rendering: pixelated; }
+.instructions { color: #a7bbc8; text-align: center; font-size: clamp(11px, 2vw, 14px); margin: 20px 0; }
+nav { display: flex; justify-content: center; gap: 10px; }
+button { font: inherit; padding: 10px 18px; border: 1px solid #355461; background: #10212c; color: #dce8ef; cursor: pointer; }
+button:hover:not(:disabled), button:focus-visible { border-color: #4affeb; color: #4affeb; }
+button:disabled { opacity: .35; cursor: default; }
