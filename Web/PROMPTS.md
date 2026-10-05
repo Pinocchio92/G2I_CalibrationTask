@@ -1,3 +1,17 @@
+# Project prompt history
+
+User requests from this conversation in chronological order. Original wording is preserved, including typos and the truncated diving prompt. Automatic browser/environment context and attachment metadata are omitted; reference images were supplied with the player and enemy requests.
+
+## 1. Analyze project
+
+analyze the project folder
+
+## 2. Set up web-ready scene
+
+ok setup a new game scene optimal for web platform. 
+
+## 3. Player spacecraft, controls and shooting
+
 now create the player spacecraft and its keyboard controls for our Space Attack browser game using JavaScript and Canvas 2D.
 
 Appearance:
@@ -31,6 +45,12 @@ Integration:
 - Display “Move: A/D or ←/→ | Fire: Hold Space” below the play area.
 
 Implement this directly in the project. Limit this step to the player, controls and shooting. Append this prompt verbatim to PROMPTS.md and tell me how to test the result.
+
+## 4. Remove Unity project
+
+remove the unity prject ad related files.. only maitaing the web folder 
+
+## 5. Enemy formations and waves
 
 Create the enemies for our Space Attack browser game using JavaScript and Canvas 2D. Integrate with the existing player, bullets and game loop.
 
@@ -78,6 +98,12 @@ Integration:
 
 Implement this directly in the project. Append this prompt verbatim to PROMPTS.md and give me a short checklist to test movement, shooting, collisions, scoring and wave transitions.
 
+## 6. Move into Git repository
+
+can you move everything in side G2I\_CalibrationTask folder I setup the git repo there 
+
+## 7. Diving attacks
+
 Add a diving enemy attack behavior to the existing Space Attack game.
 
 Dive selection:
@@ -117,6 +143,8 @@ Collisions and lifecycle:
 - Clear all dive state and timers on restart, game over and wave transitions. Freeze dive timers while paused.
 
 Implement this in the existing project without rewriting unrelated systems. Append this prompt verbatim to PROM
+
+## 8. Progressive difficulty, health and interception
 
 Update our existing Space Attack game with progressive wave difficulty, a reference-inspired health/lives HUD, and the ability to destroy enemy bullets.
 
@@ -166,6 +194,8 @@ Integrate these changes into the existing game loop and systems. Preserve workin
 
 Append this prompt verbatim to PROMPTS.md. Verify what you can and give me a short manual checklist covering wave difficulty, health damage, spare-life consumption, bullet interception and full restart reset. Do not claim tests were run unless you ran them.
 
+## 9. Hunters
+
 Add a new “Hunter” enemy behavior to our existing Space Attack game, starting at wave 6, after the player completes five waves.
 
 Hunter appearance:
@@ -204,3 +234,7 @@ Combat and integration:
 - Freeze Hunter movement and timers while paused.
 
 Implement this without rewriting unrelated systems. Append this prompt verbatim to PROMPTS.md. Give me a short checklist to verify that Hunters appear only from wave 6, track smoothly, remain dodgeable, and preserve exclusive diver shooting.
+
+## 10. Complete prompt history
+
+also update prompts.md file with all the prompts 
