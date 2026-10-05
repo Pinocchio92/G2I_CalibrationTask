@@ -8,6 +8,16 @@ h1 { font-size: clamp(22px, 4vw, 34px); letter-spacing: 4px; margin: 8px 0 0; }
 #status { color: #4affeb; font-size: 13px; }
 .hud { display: flex; justify-content: space-between; margin-bottom: 12px; color: #7e939f; font-size: 13px; letter-spacing: 2px; }
 .hud strong { color: #f5ed40; }
+.health-hud { display: flex; align-items: center; justify-content: space-between; gap: 16px; background: #000; padding: 14px clamp(8px, 3vw, 28px); }
+.energy { display: flex; align-items: center; gap: 8px; flex: 1; max-width: 62%; }
+.energy-label, #wave { color: #ff2020; font-size: clamp(20px, 4vw, 32px); font-weight: bold; }
+#health { flex: 1; height: clamp(12px, 2.5vw, 22px); background: #162016; }
+#health-fill { height: 100%; width: 100%; background: #00ef00; }
+.reserves, #lives { display: flex; align-items: center; gap: clamp(4px, 1vw, 10px); }
+.spare-ship { width: clamp(20px, 4vw, 39px); height: auto; fill: #00ef00; shape-rendering: crispEdges; }
+#wave { margin-left: 6px; }
+#start-help { color: #a7bbc8; font-size: 13px; line-height: 1.6; }
+@media (max-width: 420px) { body { padding: 10px; } nav { gap: 6px; } button { padding: 10px; } }
 .play-area { position: relative; }
 #announcement { position: absolute; top: 48%; left: 0; width: 100%; text-align: center; color: #f5ed40; font-size: clamp(16px, 3vw, 28px); font-weight: bold; pointer-events: none; text-shadow: 2px 2px #000; }
 canvas { display: block; width: 100%; height: auto; background: #000; border: 1px solid #263743; image-rendering: pixelated; }

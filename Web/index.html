@@ -10,11 +10,16 @@
 <body>
   <main>
     <header><div><p class="eyebrow">CANVAS 2D / ALIEN WAVES</p><h1>SPACE ATTACK</h1></div><span id="status" role="status">Ready</span></header>
-    <div class="hud"><span>SCORE <strong id="score">0</strong></span><span>WAVE <strong id="wave">1</strong></span><span>LIVES <strong id="lives">3</strong></span></div>
+    <div class="hud"><span>SCORE <strong id="score">0</strong></span></div>
     <div class="play-area">
     <canvas id="game" width="960" height="600" aria-label="Space Attack play area. Use A and D or arrow keys to move, and hold Space to fire."></canvas>
     <div id="announcement" role="status" aria-live="polite"></div>
     </div>
+    <div class="health-hud">
+      <div class="energy"><span class="energy-label" aria-hidden="true">E</span><div id="health" role="progressbar" aria-label="Ship health" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100"><div id="health-fill"></div></div></div>
+      <div class="reserves"><span id="lives" role="img" aria-label="2 spare lives"></span><span id="wave" aria-label="Current wave">1</span></div>
+    </div>
+    <p id="start-help">E is your ship’s health. Each green ship icon is a spare life: start with 100 health and two spares. Bullets deal 25 damage; enemy contact deals 50. Shoot pink bullets to intercept them.</p>
     <p class="instructions">Move: A/D or ←/→ | Fire: Hold Space</p>
     <nav aria-label="Game controls">
       <button id="start" type="button">Start game</button>
